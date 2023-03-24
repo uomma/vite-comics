@@ -5,17 +5,18 @@ export default {
 </script>
 
 <template>
-  <div class="ol"><img src="/dc-logo-bg.png" alt=""></div>
+    <div class="ol"><img src="/dc-logo-bg.png" alt=""></div>
 </template>
 
 <style lang="scss" scoped>
-div{
+div {
     
     display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 50px;
-    img{
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+
+    img {
         height: 350px;
     }
 }

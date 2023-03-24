@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <div class="ez">
-    <div>SIGN-UP NOW</div>
+    <div class="join">SIGN-UP NOW ! </div>
     
         <ul>
             <li>FOLLOW US</li>
@@ -30,6 +30,12 @@ export default {
     padding: 0px 50px ;
     background-color:$foooter-color ;
 
+    .join{
+        color: $text-color;
+        border:  2px solid $secondary-color;
+        padding: 5px; 
+
+    }
     ul{
         display: flex;
         justify-content: flex-start;
@@ -38,6 +44,11 @@ export default {
 
         li{
             padding: 10px;
+
+            &:first-child{
+
+                color: $secondary-color;
+            }
         }
     }
 }

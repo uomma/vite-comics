@@ -64,7 +64,7 @@ export default {
 <template>
     <nav>
         <ul>
-            <li v-for="menu in menuList"><a :href="menu.link" :target="menu.target">{{ menu.name }}</a></li>
+            <li v-for="menu in menuList"><a :href="menu.link" :target="menu.target">{{ menu.nome }}</a></li>
 
 
         </ul>

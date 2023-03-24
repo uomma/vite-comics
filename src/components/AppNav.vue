@@ -1,56 +1,56 @@
 <script>
 export default {
     name: 'AppNav',
-    data(){
-        return{
+    data() {
+        return {
             menuList: [
                 {
-                    nome:'CHARACTERS',
+                    nome: 'CHARACTERS',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'COMICS',
+                    nome: 'COMICS',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'MOVIES',
+                    nome: 'MOVIES',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'TV',
+                    nome: 'TV',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'GAMES',
+                    nome: 'GAMES',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'COLLECTIBLES',
+                    nome: 'COLLECTIBLES',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'VIDEOS',
+                    nome: 'VIDEOS',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'FANS',
+                    nome: 'FANS',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'NEWS',
+                    nome: 'NEWS',
                     link: '#',
                     target: '_self'
                 },
                 {
-                    nome:'SHOP',
+                    nome: 'SHOP',
                     link: '#',
                     target: '_self'
                 },
@@ -64,7 +64,8 @@ export default {
 <template>
     <nav>
         <ul>
-            <li v-for="menu in menuList"><a :href="menu.link" :target="menu.target">{{ menu.nome }}</a></li>
+            <li v-for="menu in menuList"><a style="text-decoration:none" :href="menu.link" :target="menu.target">{{
+                menu.nome }}</a></li>
 
 
         </ul>
@@ -79,14 +80,18 @@ nav {
         margin: 0;
         list-style: none;
         display: flex;
+
     }
 
-    li{
-        a{
+    li {
+        a {
+            color: $primary-color;
             display: inline-block;
             padding: 0.625rem;
-            &:hover{
-                background-color: $secondary-color;
+
+            &:hover {
+               color: $secondary-color;
+               
             }
 
         }

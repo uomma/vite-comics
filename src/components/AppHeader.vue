@@ -24,7 +24,7 @@ header{
     display:  flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 9.375rem;
+    margin: 0px 100px;
 }
 
 </style>

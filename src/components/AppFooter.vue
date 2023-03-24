@@ -5,8 +5,8 @@ export default {
 </script>
 <template>
     <div class="ez">
-    <div class="join">SIGN-UP NOW ! </div>
-    
+        <div class="join">SIGN-UP NOW ! </div>
+
         <ul>
             <li>FOLLOW US</li>
             <li><img src="/footer-facebook.png" alt=""></li>
@@ -19,38 +19,39 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 @use '../styles/variables.scss' as *;
 
 
-.ez{
+.ez {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px ;
-    background-color:$foooter-color ;
+    padding: 0px 50px;
+    background-color: $foooter-color ;
+    position: relative;
 
-    .join{
+    .join {
         color: $text-color;
-        border:  2px solid $secondary-color;
-        padding: 5px; 
+        border: 2px solid $secondary-color;
+        padding: 5px;
 
     }
-    ul{
+
+    ul {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         list-style: none;
 
-        li{
+        li {
             padding: 10px;
 
-            &:first-child{
+            &:first-child {
 
                 color: $secondary-color;
+                font-weight: 700;
             }
         }
     }
 }
-
 </style>

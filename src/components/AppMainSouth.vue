@@ -75,9 +75,10 @@ main {
 
         img {
             height: 400px;
-            top: 350px;
+            bottom: -325px;
             right: 200px;
             position: absolute;
+            display: none;
         }
 
         ul {

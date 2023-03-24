@@ -88,10 +88,11 @@ nav {
             color: $primary-color;
             display: inline-block;
             padding: 0.625rem;
+            font-weight: 700;
 
             &:hover {
                color: $secondary-color;
-               
+
             }
 
         }

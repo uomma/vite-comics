@@ -1,29 +1,31 @@
 <script>
-export default{
-    name:'AppMainNorth',
+export default {
+    name: 'AppMainNorth',
 }
 </script>
 <template>
-
-    <div class="faquel">Content goes here</div>
+    <div class="faquel">
+        <div class="up"></div>
+        <div class="down">container</div>
+    </div>
 </template>
 <style lang="scss" scoped>
 @use '../styles/variables.scss' as *;
+@use '../styles/mixins' as *;
 
 
-
-div{
+div {
     background-color: black;
     color: $text-color;
-    padding: 50px;
-    display: flex;
-    justify-content: flex-start;
-    
 
-    .faquel{
-       padding-left: 150px;
+    .up {
+        @include bgJumbo('../public/jumbotron.jpg');
+        height: 350px;
     }
+
+    .down{
+        height: 500px;
+    }
+
 }
-
-
 </style>
